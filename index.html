@@ -1,12 +1,622 @@
 <!DOCTYPE html>
 <html lang="en">
+
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Welcome</title>
+		<link rel="stylesheet" href="public/css/main.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+			integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+			crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<title>Document</title>
 	</head>
+
 	<body>
-		<h1>Site is under maintance.</h1>
+		<div class="preloader" id="preloader">
+			<div class="loader"></div>
+		</div>
+
+		<header>
+			<nav>
+				<div class="nav">
+					<div class="nav__logo">
+						<h1 class="nav__logo--name">CPUTRAN</h1>
+					</div>
+					<div class="nav__navigation">
+						<ul class="nav__list">
+							<li class="nav__item">
+								<a href="#" class="nav__link active">HOME</a>
+							</li>
+							<li class="nav__item">
+								<a href="#projects" class="nav__link">PROJECTS</a>
+							</li>
+							<li class="nav__item">
+								<a href="#contact" class="nav__link">CONTACT</a>
+							</li>
+							<li class="nav__item">
+								<a href="#about" class="nav__link">ABOUT</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<div class="hero">
+				<div class="hero__description">
+					<h1 class="hero__description--title">
+						Welcome to CP's world |
+						<span class="hero_change_content">
+							<span class="type" id="type"></span>
+						</span>
+					</h1>
+					<p class="hero__description--text">we bulid the world</p>
+				</div>
+				<div class="hero__icons">
+					<ul class="icons__list">
+						<li class="list__item"><a href="#" class="icon__link"><i
+									class="fa-brands fa-facebook-f icon"></i></a></li>
+
+						<li class="list__item"><a href="#" class="icon__link"><i
+									class="fa-brands fa-linkedin-in icon"></i></a></li>
+
+						<li class="list__item"><a href="#" class="icon__link"><i
+									class="fa-brands fa-twitter icon"></i></a></li>
+
+						<li class="list__item"><a href="#" class="icon__link"><i
+									class="fa-brands fa-instagram icon"></i></a></li>
+
+				</div>
+			</div>
+			<div class="slide-in"> <a href="#" class="pointer"></a></div>
+		</header>
+		<section id="about" class="section section__About">
+			<h1 class="heading heading__Primary margin__Large--bottom">ABOUT</h1>
+			<div class="container">
+				<div class="about__me">
+					<div class="about__contents">
+						<span class="about__contents--itip">Hi</span>
+						<h1 class="about__contents--name">
+							<span class="about__contents--name-lean">I'm</span> Chethan
+						</h1>
+						<h2 class="about__contents--designation">
+
+							Designer and Artist
+						</h2>
+						<p class="about__contents--description">
+
+							Whether art and artists should receive government funding has always been a topic of debate.
+							Some people argue that the government should spend its money on more important things like
+							health and education instead of sponsoring artists and art events. I do not quite agree with
+							this view. In my opinion, it is important to spend on sectors like healthcare, education and
+							infrastructure. This, however, does not mean that art and artists can be neglected.
+						</p>
+					</div>
+					<div class="about__img">
+						<img src="./public/images/dp.jpg" alt="profile_img" class="profile_img">
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="projects" class="section section__Projects">
+			<h1 class="heading heading__Primary margin__Large--bottom">PROJECTS & INTERNSHIPS</h1>
+			<div class="projects__Banner">
+				<div class="project__Container">
+					<div class="project__Box">
+						<p class="project__Label">10+</p>
+						<p class="project__Value">Projects</p>
+					</div>
+					<div class="project__Box">
+						<p class="project__Label">5+</p>
+						<p class="project__Value">Internships</p>
+					</div>
+					<div class="project__Box">
+						<p class="project__Label">20+</p>
+						<p class="project__Value">Certifications</p>
+					</div>
+					<div class="project__Box">
+						<p class="project__Label">2+</p>
+						<p class="project__Value">Websites</p>
+					</div>
+				</div>
+			</div>
+			<div class="carousel__Container">
+				<div class="carousel" aria-label="Gallery">
+					<ul class="carousel__viewport">
+						<li id="slide1" tabindex="0" class="carousel__slide">
+							<div class="card project__Card">
+								<div class="card__Header project__Card--header">
+									<div class="card__Image--holder">
+										<img src="./public/images/1.jpg" alt="Project 1" class="card__Image">
+									</div>
+									<h3 class="card__Title">Project 1</h3>
+								</div>
+								<p class="card__Description">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam est itaque optio quae
+									molestias
+								</p>
+								<div class="card__Btn-box">
+									<a href="#" class="btn btn__Green">View</a>
+								</div>
+							</div>
+							<div class="carousel__snapper">
+								<a href="#slide6" class="carousel__prev">Go to last slide</a>
+								<a href="#slide2" class="carousel__next">Go to next slide</a>
+							</div>
+
+
+						</li>
+						<li id="slide2" tabindex="0" class="carousel__slide">
+							<div class="card project__Card">
+								<div class="card__Header project__Card--header">
+									<div class="card__Image--holder">
+										<img src="./public/images/2.jpg" alt="Project 2" class="card__Image">
+									</div>
+									<h3 class="card__Title">Project 2</h3>
+								</div>
+								<p class="card__Description">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam est itaque optio quae
+									molestias
+								</p>
+								<div class="card__Btn-box">
+									<a href="#" class="btn btn__Green">View</a>
+								</div>
+							</div>
+							<div class="carousel__snapper">
+								<a href="#slide1" class="carousel__prev">Go to last slide</a>
+								<a href="#slide3" class="carousel__next">Go to next slide</a>
+							</div>
+
+
+						</li>
+						<li id="slide3" tabindex="0" class="carousel__slide">
+							<div class="card project__Card">
+								<div class="card__Header project__Card--header">
+									<div class="card__Image--holder">
+										<img src="./public/images/3.jpg" alt="Project 3" class="card__Image">
+									</div>
+									<h3 class="card__Title">Project 3</h3>
+								</div>
+								<p class="card__Description">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam est itaque optio quae
+									molestias
+								</p>
+								<div class="card__Btn-box">
+									<a href="#" class="btn btn__Green">View</a>
+								</div>
+							</div>
+							<div class="carousel__snapper">
+								<a href="#slide2" class="carousel__prev">Go to last slide</a>
+								<a href="#slide4" class="carousel__next">Go to next slide</a>
+							</div>
+
+
+						</li>
+						<li id="slide4" tabindex="0" class="carousel__slide">
+							<div class="card project__Card">
+								<div class="card__Header project__Card--header">
+									<div class="card__Image--holder">
+										<img src="./public/images/4.jpg" alt="Project 2" class="card__Image">
+									</div>
+									<h3 class="card__Title">Project 4</h3>
+								</div>
+								<p class="card__Description">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam est itaque optio quae
+									molestias
+								</p>
+								<div class="card__Btn-box">
+									<a href="#" class="btn btn__Green">View</a>
+								</div>
+							</div>
+							<div class="carousel__snapper">
+								<a href="#slide3" class="carousel__prev">Go to last slide</a>
+								<a href="#slide5" class="carousel__next">Go to next slide</a>
+							</div>
+
+
+						</li>
+						<li id="slide5" tabindex="0" class="carousel__slide">
+							<div class="card project__Card">
+								<div class="card__Header project__Card--header">
+									<div class="card__Image--holder">
+										<img src="./public/images/5.jpg" alt="Project 5" class="card__Image">
+									</div>
+									<h3 class="card__Title">Project 5</h3>
+								</div>
+								<p class="card__Description">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam est itaque optio quae
+									molestias
+								</p>
+								<div class="card__Btn-box">
+									<a href="#" class="btn btn__Green">View</a>
+								</div>
+							</div>
+							<div class="carousel__snapper">
+								<a href="#slide4" class="carousel__prev">Go to last slide</a>
+								<a href="#slide6" class="carousel__next">Go to next slide</a>
+							</div>
+
+
+						</li>
+						<li id="slide6" tabindex="0" class="carousel__slide">
+							<div class="card project__Card">
+								<div class="card__Header project__Card--header">
+									<div class="card__Image--holder">
+										<img src="./public/images/6.jpg" alt="Project 6" class="card__Image">
+									</div>
+									<h3 class="card__Title">Project 6</h3>
+								</div>
+								<p class="card__Description">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam est itaque optio quae
+									molestias
+								</p>
+								<div class="card__Btn-box">
+									<a href="#" class="btn btn__Green">View</a>
+								</div>
+							</div>
+							<div class="carousel__snapper">
+								<a href="#slide5" class="carousel__prev">Go to last slide</a>
+								<a href="#slide1" class="carousel__next">Go to next slide</a>
+							</div>
+						</li>
+
+					</ul>
+					<aside class="carousel__navigation">
+						<ol class="carousel__navigation-list">
+							<li class="carousel__navigation-item">
+								<a href="#slide1" class="carousel__navigation-button">Go to slide 1</a>
+							</li>
+							<li class="carousel__navigation-item">
+								<a href="#slide2" class="carousel__navigation-button">Go to slide 2</a>
+							</li>
+							<li class="carousel__navigation-item">
+								<a href="#slide3" class="carousel__navigation-button">Go to slide 3</a>
+							</li>
+							<li class="carousel__navigation-item">
+								<a href="#slide4" class="carousel__navigation-button">Go to slide 4</a>
+							</li>
+							<li class="carousel__navigation-item">
+								<a href="#slide5" class="carousel__navigation-button">Go to slide 5</a>
+							</li>
+							<li class="carousel__navigation-item">
+								<a href="#slide6" class="carousel__navigation-button">Go to slide 6</a>
+							</li>
+
+						</ol>
+					</aside>
+				</div>
+			</div>
+
+
+
+		</section>
+
+		<section id="skills" class="section section__Skills">
+			<h1 class="heading heading__Primary margin__Large--bottom">SKILLS & INFO</h1>
+			<div class="info__Container">
+
+				<div class="skill__Container">
+					<div class="skill__Box">
+						<p class="skill__Label">Python</p>
+						<div class="skill__Percent">
+							<div class="skill__Percent--box skill_color-1" style="width: 90%;"></div>
+						</div>
+					</div>
+
+					<div class="skill__Box">
+						<p class="skill__Label">JS</p>
+						<div class="skill__Percent">
+							<div class="skill__Percent--box skill_color-2" style="width: 80%;"></div>
+						</div>
+					</div>
+					<div class="skill__Box">
+						<p class="skill__Label">C++</p>
+						<div class="skill__Percent">
+							<div class="skill__Percent--box skill_color-3" style="width: 75%;"></div>
+						</div>
+					</div>
+					<div class="skill__Box">
+						<p class="skill__Label">C</p>
+						<div class="skill__Percent">
+							<div class="skill__Percent--box skill_color-4" style="width: 80%;"></div>
+						</div>
+					</div>
+					<div class="skill__Box">
+						<p class="skill__Label">HTML</p>
+						<div class="skill__Percent">
+							<div class="skill__Percent--box-box skill_color-5" style="width: 90%;"></div>
+						</div>
+					</div>
+
+					<div class="skill__Box">
+						<p class="skill__Label">CSS</p>
+						<div class="skill__Percent">
+							<div class="skill__Percent--box skill_color-6" style="width: 80%;"></div>
+						</div>
+					</div>
+					<div class="skill__Box">
+						<p class="skill__Label">Node</p>
+						<div class="skill__Percent">
+							<div class="skill__Percent--box skill_color-7" style="width: 70%;"></div>
+						</div>
+					</div>
+					<div class="skill__Box">
+						<p class="skill__Label">React</p>
+						<div class="skill__Percent">
+							<div class="skill__Percent--box skill_color-8" style="width: 75%;"></div>
+						</div>
+					</div>
+				</div>
+				<div class="edu__Container">
+					<ul class="edu__List">
+						<li class="edu__Item">
+							<div class="edu__Box">
+								<p class="edu__Box--label">Sem</p>
+								<p class="edu__Box--value">6</p>
+							</div>
+						</li>
+						<li class="edu__Item">
+
+							<div class="edu__Box">
+								<p class="edu__Box--label">Year</p>
+								<p class="edu__Box--value">3rd</p>
+							</div>
+						</li>
+						<li class="edu__Item">
+							<div class="edu__Box">
+								<p class="edu__Box--label">Branch</p>
+								<p class="edu__Box--value">Mehanical</p>
+							</div>
+						</li>
+
+
+						<li class="edu__Item">
+							<div class="edu__Box">
+								<p class="edu__Box--label">College</p>
+								<p class="edu__Box--value">NMAMIT</p>
+							</div>
+						</li>
+						<li class="edu__Item">
+							<div class="edu__Box">
+								<p class="edu__Box--label">Email</p>
+								<p class="edu__Box--value"><a href="#">4nm19me025@nmamit.in</a></p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="cards_Holder">
+				<div class="card skill__Card">
+					<div class="card__Header">
+						<span class="card__Icon--holder">
+							<img src="./public/images/coding.png" alt="Web Development Icon" class="card__Image">
+						</span>
+						<span class="card__Title">Web Development</span>
+					</div>
+					<p class="card__Description">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam est itaque optio quae molestias,
+						aspernatur inventore, voluptas pariatur dolores asperiores ipsam similique culpa in omnis maxime
+						dicta natus dolore adipisci.
+					</p>
+					<div class="card__Btn-box">
+						<a href="#" class="btn btn__Green">View</a>
+					</div>
+				</div>
+				<div class="card skill__Card">
+					<div class="card__Header">
+						<span class="card__Icon--holder">
+							<img src="./public/images/artificial-intelligence.png" alt="Artificial Intelligence Icon"
+								class="card__Image">
+						</span>
+						<span class="card__Title">Artificial Intelligence</span>
+					</div>
+					<p class="card__Description">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum eum nam excepturi in modi est
+						explicabo amet. Ipsum quas tenetur quam quibusdam similique blanditiis, labore laborum
+						perferendis saepe voluptates magnam.
+					</p>
+					<div class="card__Btn-box">
+						<a href="#" class="btn btn__Green">View</a>
+					</div>
+				</div>
+				<div class="card skill__Card">
+					<div class="card__Header">
+						<span class="card__Icon--holder">
+							<img src="./public/images/cyber-security.png" alt="Cyber Security Icon" class="card__Image">
+						</span>
+						<span class="card__Title">Cyber Security</span>
+					</div>
+					<p class="card__Description">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non aspernatur aut ea voluptates
+						quisquam id eligendi facere accusantium officiis, quasi nisi? In perferendis velit optio.
+						Voluptates velit magnam autem similique.
+					</p>
+					<div class="card__Btn-box">
+						<a href="#" class="btn btn__Green">View</a>
+					</div>
+				</div>
+				<div class="card skill__Card">
+					<div class="card__Header">
+						<span class="card__Icon--holder">
+							<img src="./public/images/machine-learning.png" alt="Machine Learning Icon"
+								class="card__Image">
+						</span>
+						<span class="card__Title">Machine Learning</span>
+					</div>
+					<p class="card__Description">
+						Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores nesciunt dolores officiis
+						commodi aut quisquam suscipit eius deserunt ullam rem voluptate doloribus esse libero temporibus
+						rerum repellat delectus, vel pariatur?
+					</p>
+					<div class="card__Btn-box">
+						<a href="#" class="btn btn__Green">View</a>
+					</div>
+				</div>
+				<div class="card skill__Card">
+					<div class="card__Header">
+						<span class="card__Icon--holder">
+							<img src="./public/images/robot-arm.png" alt="Robotics Icon" class="card__Image">
+						</span>
+						<span class="card__Title">Robotics</span>
+					</div>
+					<p class="card__Description">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, adipisci. Illum praesentium sunt
+						nihil ducimus ratione aspernatur temporibus hic nulla reiciendis, eos est voluptates obcaecati
+						ipsum excepturi? Magni, debitis provident.
+					</p>
+					<div class="card__Btn-box">
+						<a href="#" class="btn btn__Green">View</a>
+					</div>
+				</div>
+				<div class="card skill__Card">
+					<div class="card__Header">
+						<span class="card__Icon--holder">
+							<img src="./public/images/self-driving.png" alt="Self Driving Cars Icon"
+								class="card__Image">
+						</span>
+						<span class="card__Title">Self Driving Cars</span>
+					</div>
+					<p class="card__Description">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, dignissimos iusto rerum
+						voluptatibus accusamus provident reiciendis iste nostrum pariatur perferendis in minus fuga ut
+						odio laudantium aliquam repellat voluptates eius!
+					</p>
+					<div class="card__Btn-box">
+						<a href="#" class="btn btn__Green">View</a>
+					</div>
+				</div>
+				<div class="card skill__Card">
+					<div class="card__Header">
+						<span class="card__Icon--holder">
+							<img src="./public/images/illustrator.png" alt="Adobe Illustrator Icon" class="card__Image">
+						</span>
+						<span class="card__Title">Adobe Illustrator</span>
+					</div>
+					<p class="card__Description">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, dignissimos iusto rerum
+						voluptatibus accusamus provident reiciendis iste nostrum pariatur perferendis in minus fuga ut
+						odio laudantium aliquam repellat voluptates eius!
+					</p>
+					<div class="card__Btn-box">
+						<a href="#" class="btn btn__Green">View</a>
+					</div>
+				</div>
+				<div class="card skill__Card">
+					<div class="card__Header">
+						<span class="card__Icon--holder">
+							<img src="./public/images/photoshop.png" alt="Adobe Illustrator Icon" class="card__Image">
+						</span>
+						<span class="card__Title">Adobe Photoshop</span>
+					</div>
+					<p class="card__Description">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, dignissimos iusto rerum
+						voluptatibus accusamus provident reiciendis iste nostrum pariatur perferendis in minus fuga ut
+						odio laudantium aliquam repellat voluptates eius!
+					</p>
+					<div class="card__Btn-box">
+						<a href="#" class="btn btn__Green">View</a>
+					</div>
+				</div>
+				<div class="card skill__Card">
+					<div class="card__Header">
+						<span class="card__Icon--holder">
+							<img src="./public/images/dwg.png" alt="AutoCad Icon" class="card__Image">
+						</span>
+						<span class="card__Title">AutoCad</span>
+					</div>
+					<p class="card__Description">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, dignissimos iusto rerum
+						voluptatibus accusamus provident reiciendis iste nostrum pariatur perferendis in minus fuga ut
+						odio laudantium aliquam repellat voluptates eius!
+					</p>
+					<div class="card__Btn-box">
+						<a href="#" class="btn btn__Green">View</a>
+					</div>
+				</div>
+				<div class="card skill__Card">
+					<div class="card__Header">
+						<span class="card__Icon--holder">
+							<img src="./public/images/mobile-app.png" alt="App Development Icon" class="card__Image">
+						</span>
+						<span class="card__Title">App Development</span>
+					</div>
+					<p class="card__Description">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, dignissimos iusto rerum
+						voluptatibus accusamus provident reiciendis iste nostrum pariatur perferendis in minus fuga ut
+						odio laudantium aliquam repellat voluptates eius!
+					</p>
+					<div class="card__Btn-box">
+						<a href="#" class="btn btn__Green">View</a>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		<section id="contact" class="section section__Contact">
+			<h1 class="heading heading__Primary margin__Large--bottom">CONTACT ME</h1>
+			<div class="contact__Form-container">
+				<form action="/" class="contact__Form" method="post">
+					<div class="form__Item">
+						<label for="email" class="label">Name *</label>
+						<input type="text" name="name" class="input">
+					</div>
+					<div class="form__Item">
+						<label for="email" class="label">Email *</label>
+						<input type="text" name="email" class="input">
+					</div>
+					<div class="form__Item">
+						<label for="email" class="label">Message *</label>
+						<input type="text" name="message" class="input">
+					</div>
+					
+					<div class="form__Item">
+						<button  class="btn btn__Orange form__Btn" type="submit">Submit</button>
+					</div>
+
+				</form>
+			</div>
+			<div class="contact__Container">
+				<div class="contact__Box">
+					<p class="contact__Label">Phone</p>
+					<p class="contact__Value">+91 7624853557</p>
+				</div>
+				<div class="contact__Box">
+					<p class="contact__Label">Address</p>
+					<p class="contact__Value">2nd cross, Kadandale</p>
+				</div>
+				<div class="contact__Box">
+					<p class="contact__Label">Email</p>
+					<p class="contact__Value">4nm19me025@nmamit.in</p>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<div class="footer">
+				<div class="copyright">
+					<p class="copyright__text">
+						© 2021 chethan222.github.io. All rights reserved |
+						Design by
+						<a href="#" target="_blank" class="footer__designer--name">chethansputran</a>
+					</p>
+				</div>
+			</div>
+		</footer>
+
+		<!-- jquery -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+			integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+			crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+		<!-- WOW js -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+			integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+			crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+		<!-- Types js -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js"></script>
+
+		<!-- Main script -->
+		<script src="public/js/index.js"></script>
 	</body>
+
 </html>
