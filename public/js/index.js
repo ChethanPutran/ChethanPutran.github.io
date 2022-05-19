@@ -1,5 +1,18 @@
 const preloader = document.getElementById('preloader');
+const nav_btn_open = document.getElementById('nav_btn_open');
+const nav_btn_close = document.getElementById('nav_btn_close');
+const menu = document.querySelector('.nav__navigation');
+const nav_logo = document.querySelector('.nav__logo');
 
+const operate_menu = () => {
+	menu.classList.toggle('show');
+	nav_btn_open.classList.toggle('hide');
+	nav_btn_close.classList.toggle('show');
+	nav_logo.classList.toggle('hide');
+};
+
+nav_btn_open.addEventListener('click', operate_menu);
+nav_btn_close.addEventListener('click', operate_menu);
 function fadeOutEffect() {
 	const fadeEffect = setInterval(function () {
 		if (!preloader.style.opacity) {
