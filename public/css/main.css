@@ -190,7 +190,10 @@ html {
 .hero__change_content {
     position: relative;
 }
-
+.text_org{
+    color: orange;
+    font-weight: 900;
+}
 .hero__icons {
     margin-top: 2rem;
 }

@@ -31,7 +31,7 @@ function fadeOutEffect() {
 $(function () {
 	'use strict';
 	$('.type').typed({
-		strings: ['Creativity', 'Artist', 'Designer'], //Headlines(Change It)
+		strings: ['Engineer', 'Designer', 'Coder', 'Web Developer', 'Artist'], //Headlines(Change It)
 		loop: true,
 		startDelay: 1e3,
 		backDelay: 2e3,
