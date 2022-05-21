@@ -1,46 +1,55 @@
-@media screen and (max-width: 1140px){
-    .section__About{
+@media screen and (max-width: 1140px) {
+    .section__About {
         padding-top: 40rem;
     }
-    section,
-        .contact__Form-container {
-            padding-bottom: 5rem;
-        }
+
+   
+         .contact__Form-container {
+             padding-bottom: 8rem;
+         }
 }
-@media screen and (max-width: 900px){
-    .nav__logo--name {
-            font-size: 3.4rem;
-        }
-    body{
+
+@media screen and (max-width: 900px) {
+    body {
         font-size: 60%;
     }
-                .section__About {
-                    padding-top: 40rem;
-                }
-    .project__Label{
+    .nav__logo--name {
+        font-size: 3.4rem;
+    }
+      
+
+
+    .section__About {
+        padding-top: 40rem;
+    }
+
+    .project__Label {
         font-size: 3rem;
     }
-    .project__Value{
-        font-size: 1.6rem;
-    }
-    .contact__Label{
-        font-size: 1.6rem;
-    }
-    .contact__Value{
-        font-size: 1.6rem;
-    }
-        .cards_Holder {
-            padding: 0 2rem;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 5;
-            row-gap:3rem;
-            column-gap: 1rem;
-        }
 
-.contact__Form-container{
-    padding-bottom: 4rem;
-}
-    .section__Skills{
+    .project__Value {
+        font-size: 1.6rem;
+    }
+
+    .contact__Label {
+        font-size: 1.6rem;
+    }
+
+    .contact__Value {
+        font-size: 1.6rem;
+    }
+
+    .cards_Holder {
+        grid-template-columns: 1fr 1fr;
+        row-gap: 3rem;
+        column-gap: 1rem;
+    }
+
+    .contact__Form-container {
+        padding-bottom: 8rem;
+    }
+
+    .section__Skills {
         padding: 3rem;
     }
 
@@ -48,24 +57,35 @@
         width: 32rem;
     }
 }
-@media screen and (max-width: 780px){
-    .nav__logo--name {
-            font-size: 3.2rem;
+
+@media screen and (max-width: 780px) {
+    body {
+            font-size: 55%;
         }
-    .nav_menu{
+    .nav__logo--name {
+        font-size: 3.2rem;
+    }
+
+    .nav_menu {
         display: block;
         margin-right: 2rem;
     }
-    .nav__navigation{
+        .nav_menu-icon {
+            font-size: 4.7rem;
+            padding: 0;
+        }
+
+    .nav__navigation {
         display: none;
     }
-    .nav__list{
+
+    .nav__list {
         flex-direction: column;
         position: absolute;
         width: 100%;
-        top:0;
+        top: 0;
         z-index: 10;
-        left:0;
+        left: 0;
         align-items: flex-start;
         transition: all 1s;
         animation: ease-in-out 1s;
@@ -73,127 +93,252 @@
         padding-left: 3.5rem;
     }
 
-                .section__About {
-                    padding-top: 40rem;
-                }
-                .heading__Primary{
-                    font-size: 3.2rem;
-                }
-.about__me{
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.project__Container{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 2;
-    justify-items: center;
-    padding-right: 3rem;
-    padding-left: 3rem;
-}
- .project__Box {
-     gap:2rem;
- }
- .project__Label {
-     font-size: 2.5rem;
- }
-
- .project__Value {
-     font-size: 1.4rem;
- }
-  .contact__Label {
-      font-size: 1.4rem;
-  }
-
-  .contact__Value {
-      font-size: 1.4rem;
-  }
-    .cards_Holder{
-        grid-template-columns: 1fr 1fr ;
-        grid-template-rows: 6;
+    .section__About {
+        padding-top: 40rem;
     }
-         .contact__Form-container {
-             width: 100%;
-             padding: 3rem 4rem 4rem 4rem;
-    
-         }
-         .skill__Card {
-             width: 25rem;
-         }
-    .info__Container{
+
+    .heading__Primary {
+        font-size: 3.2rem;
+    }
+
+    .about__me {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .project__Container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        padding-right: 3rem;
+        padding-left: 3rem;
+    }
+
+    .project__Box {
+        gap: 2rem;
+    }
+
+    .project__Label {
+        font-size: 2.5rem;
+    }
+
+    .project__Value {
+        font-size: 1.4rem;
+    }
+
+    .contact__Label {
+        font-size: 1.4rem;
+    }
+
+    .contact__Value {
+        font-size: 1.4rem;
+    }
+
+    .cards_Holder {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 3rem;
+    }
+
+    .contact__Form-container {
+        width: 100%;
+        padding: 3rem 4rem 4rem 4rem;
+
+    }
+
+    .skill__Card {
+        width:100%;
+    }
+
+    .info__Container {
         flex-direction: column;
         align-items: center;
         justify-content: center;
         padding: 2rem 3rem;
     }
-    .edu__List{
-        width: 50rem;
+
+    .edu__List {
+        width: 80%;
         margin: 0 auto;
     }
 }
-@media screen and (max-width: 560px){
-    .nav__logo--name{
-font-size: 2.8rem;
+
+@media screen and (max-width: 560px) {
+    body {
+            font-size: 50%;
+        }
+                .section__Skills {
+                    padding: 3rem 1rem;
+                }
+    .nav__logo--name {
+        font-size: 2.8rem;
     }
-    .about__contents--name{
-        font-size: 2.6rem;
+        .btn__Green {
+            font-size: 1.2rem}
+        .nav_menu-icon {
+            font-size: 4.5rem;
+            padding: 0;
+        }
+    .about__contents--name-lean{
+        font-size:2.2rem ;
     }
-    .about__contents--designation{
+.about__contents--itip {
+    font-size: 1.4rem;
+}
+    .about__contents--name {
+        font-size: 2.2rem;
+    }
+
+    .about__contents--designation {
+        font-size: 2rem;
+    }
+
+    .heading__Primary {
+        font-size: 2.2rem;
+    }
+  .info__Container {
+      padding:2rem 1.5rem;
+  }
+    .cards_Holder {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    .edu_label{
+        font-size: 1.6rem;
+    }
+    .edu_value{
+        font-size: 1.4rem;
+    }
+        .edu__List {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+    .hero__description--title {
+        font-size: 3.6rem;
+    }
+
+    .hero__description--text {
+        font-size: 1.6rem;
+    }
+
+    .skill__Card {
+        width: 32rem;
+    }
+
+    .project__Box {
+        gap: 1rem;
+    }
+
+    .card__Description {
+        font-size: 1.4rem;
+    }
+
+    .project__Container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .contact__Form-container {
+        width: 100%;
+
+    }
+
+    .contact__Container {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .contact__Box {
+        gap: 1rem;
+    }
+
+    .contact__Label {
+        font-size: 1.4rem;
+    }
+
+    .contact__Value {
+        font-size: 1.4rem;
+    }
+
+    .copyright__text {
+        font-size: 1.4rem;
+    }
+
+    .carousel__Container {
+        width: 90%;
+        margin: auto;
+    }
+
+    .edu__Box--label {
+        margin-right: 3rem;
+    }
+
+    .skill__Card {
+        width: 90%;
+    }
+
+}
+
+@media screen and (max-width: 360px) {
+    body {
+            font-size: 45%;
+        }
+        .nav{
+            padding: 0 .5rem;
+        }
+        .hero__description{
+            padding: 1rem;
+        }
+    .about__contents--itip{
+        font-size: 1.4rem;
+    }
+    .nav_menu-icon {
+            font-size: 4rem;
+            padding: 0;
+        }
+    .nav__logo--name {
+            font-size: 2rem;
+        }
+    .heading__Primary {
         font-size: 2.4rem;
     }
-    .heading__Primary {
-            font-size: 2.8rem;
-        }
-    .cards_Holder {
-            grid-template-columns: 1fr;
-            grid-template-rows: 10;
-        }
-        .hero__description--title{
-            font-size: 3.6rem;
-        }
-        .hero__description--text{
-font-size: 1.6rem;
-        }
-    .skill__Card {
-            width: 32rem;
-        }
-        .project__Box{
-            gap:1rem;
-        }
-                .card__Description{
-                    font-size: 1.4rem;
-                }
-        .project__Container {
-            display: flex;
-            flex-wrap: wrap;
-        }
-        .contact__Form-container{
-            width: 100%;
-            padding:3rem 2rem 4rem 2rem;
-
-        }
-        .contact__Container{
-            flex-direction: column;
-            gap:3rem;
-        }
-        .contact__Box{
-            gap:1rem;
-        }
-                 .contact__Label {
-                     font-size: 1.4rem;
-                 }
-        
-                 .contact__Value {
-                     font-size: 1.4rem;
-                 }
-                 .copyright__text{
-                     font-size: 1.4rem;
-                 }
+    .section__About{
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+    .about__img{
+padding: 0;
+    }
+.profile_img{
+width: 100%;
 }
-@media screen and (max-width: 320px){
-    .heading__Primary {
-            font-size: 2.4rem;
-        }
-    
+    .carousel__Container {
+        width: 90%;
+        margin: auto;
+    }
+
+    .info__Container {
+        padding: 1rem 0;
+    }
+ .edu__List {
+     width: 80%;
+     margin: 0;
+ }
+    .edu__Box--label {
+        margin-right: 1rem;
+    }
+
+    .section__Skills {
+        padding: 0 1rem;
+    }
+
+    .skill__Card {
+        width: 90%;
+    }
+
+
+.edu_value a{
+    word-break: break-all;
+}
 }

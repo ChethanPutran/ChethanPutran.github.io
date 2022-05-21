@@ -23,7 +23,9 @@ html {
     font-size: 62.5%;
     scroll-behavior: smooth;
 }
-
+body{
+    overflow-x: hidden;
+}
 
 /******************************** Navigation *******************************/
 .nav {
@@ -264,9 +266,7 @@ html {
     padding-top: 5rem;
 }
 
-.container {
-    margin: 1 3rem;
-}
+
 
 /*************************** Section-1 ***********************************/
 .section__About {
@@ -435,41 +435,24 @@ html {
 
 .edu__Container {
     width: 100%;
-    padding: 0 2rem;
     align-self: center;
     justify-self: center;
 }
 
 .edu__List {
-    display: flex;
-    flex-direction: column;
+    font-family: 'Rubik';
+    font-size: 1.6rem;
+    font-weight: 300;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 1.5rem;
 }
 
-.edu__Item {
-    list-style: none;
-}
-
-.edu__Box {
-    display: flex;
-    text-align: start;
-}
-
-.edu__Box--label {
-    flex: 0 0 30%;
-    font-family: 'Rubik';
-    width: 100%;
-    font-size: 1.6rem;
-    font-weight: 500;
+.edu_label {
     text-transform: uppercase;
 }
 
-.edu__Box--value {
-    flex: 0 0 70%;
-    font-family: 'Rubik';
-    font-size: 1.6rem;
-    width: 100%;
-    font-weight: 300;
+.edu_value {
     color: #9da0a7;
 }
 
@@ -534,10 +517,12 @@ html {
 
 /************************************ Section Contact *******************/
 .section__Contact {
-    margin: 0 !important;
-    border: none !important;
-    padding-top: 6.5rem;
+    margin: 0;
+    border: none;
     padding-bottom: 0;
+}
+.contact__Form-container{
+    padding-bottom: 5rem;
 }
 
 .contact__Container {
@@ -573,7 +558,9 @@ html {
     width: 60rem;
     margin: auto;
 }
-
+section{
+    padding-bottom: 8rem;
+}
 .form__Item {
     display: flex;
     flex-direction: column;
@@ -722,7 +709,6 @@ footer {
 .cards_Holder {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 4;
     row-gap: 3rem;
     column-gap: 3rem;
     margin-top: 5rem;
@@ -818,7 +804,7 @@ footer {
 .btn__Green {
     border-radius: 10rem;
     text-transform: uppercase;
-    font-size: 140%;
+    font-size: 1.4rem;
     background: #55c57a;
     padding: 1rem 3rem;
     letter-spacing: 1px;
@@ -1135,7 +1121,7 @@ li {
 }
 
 .carousel__viewport {
-    width: 50rem;
+    width: 100%;
     height: 40rem;
     position: absolute;
     top: 0;
