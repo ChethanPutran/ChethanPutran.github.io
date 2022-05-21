@@ -598,6 +598,7 @@ section{
 
 .input:hover {
     outline: none;
+    border-bottom: 2px solid #d16506;
 }
 
 .input:active {
